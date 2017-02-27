@@ -1,11 +1,11 @@
 import axios from 'axios'
 
 let api = axios.create({
-  baseURL: 'http://localhost:3000/api/',
+  baseURL: 'https://vue-kanban.herokuapp.com/api/',
   timeout: 2000,
   withCredentials: true
 })
-api.post('http://localhost:3000/login', {
+api.post('https://vue-kanban.herokuapp.com/login', {
   email: 'jake1@boisecodeworks.com',
   password: 'testing123'
 })
